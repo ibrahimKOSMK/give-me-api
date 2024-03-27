@@ -9,7 +9,7 @@ function Header() {
 
 <nav class="border-teal bg-niga dark:bg-gray-800 dark:border-gray-700">
   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-    <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+    <a href="" class="flex items-center space-x-3 rtl:space-x-reverse">
         <img src="https://i.ibb.co/2dmdYHr/72-AD5332-C123-44-EF-B8-EA-D0-C1-E8-F967-F7.png" class="h-10" alt=" Logo" />
         <img src='https://i.ibb.co/StHP6sM/2316-B015-46-D6-44-E8-A030-022-AD938-CE2-A.png' alt='' class="self-center w-36 h-16"/>
     </a>

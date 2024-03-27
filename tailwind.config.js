@@ -28,7 +28,8 @@ module.exports = {
       teal1 : '#006666',
       teal2 : '#004c4c',
       xteal : '#b2d8d8',
-      
+      gray : '#f3f4f6',
+      gae : "#BDBDBD",
     },
 
     extend: {

@@ -14,7 +14,7 @@ const Niga = () => {
     <div>
 
 
-      
+      {/*
       <section className="relative flex justify-center items-center min-h-screen overflow-hidden">
       <div class="content">
         
@@ -121,6 +121,7 @@ const Niga = () => {
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <swiper/>
+  */}
 
     </div>
   )

@@ -42,19 +42,20 @@ function Blogs({}) {
  
 
 
-<div className='  -z-10 grid grid-rows-4 grid-cols-6  pt-4 pl- pb-8 bg-second shadow-white drop-shadow-2xl'>
+<div className='   -z-10 grid grid-rows-4 grid-cols-6  pt-4 pl- pb-8 bg-second shadow-white drop-shadow-2xl'>
 {ServiceData.map((item) => (
-          <list key={item.title}>
-            <div className="flex flex-col  text-center ml-2  gap-  mb-10 border-teal1 border-x-2 group relative shadow-lg text-niga rounded-md  h-[250px] w-[215px] lg:h-[300px] lg:w-[230px] overflow-hidden cursor-pointer  ">
-              
+  
+          <list  key={item.title}>
+            <div  className="flex flex-col  text-center ml-2  gap-  mb-10 border-teal1 border-x-2 group relative shadow-lg text-niga rounded-md  h-[250px] w-[215px] lg:h-[300px] lg:w-[230px] overflow-hidden cursor-pointer  ">
+              <a href={`/episode/${item.url}`}>
               <div
                 className="absolute inset-0 bg-cover  bg-center    "  
 
-              style={{backgroundImage: `url(https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781608872251/the-walking-dead-9781608872251_hr.jpg)` }}  
+              style={{backgroundImage: `url(${item.backgroundImage})` }}  
               />
 
 
-              <div className="absolute inset-0  opacity-100  bg-gradient-to-t from-niga to-white)  " />
+              <div  className="absolute inset-0  opacity-100  bg-gradient-to-t from-niga to-white)  " />
 
               <span className="absolute flex flex-row  text-second tracking-[2px] text-[0.8rem] font-bold shadow-[inset_2px_-2px_20px_rgba(214,214,214,0.2),inset_-3px_3px_3px_rgba(255,255,255,0.4)] backdrop-blur-[74px] bg-teal m-2.5 px-[15px] py-[7px] rounded-[20px] right-0 top-0 ">
               <FaStar className='mt-0.5 mr-1'/> 
@@ -62,26 +63,28 @@ function Blogs({}) {
                
                 </span>
          
-          <div className=" opacity-0 translate-y-full mb-5 z-50  group-hover:opacity-100  group-hover:transition-all group-hover:translate-y-0 duration-1000 ">
+          <div  className=" opacity-0 bg-niga   translate-y-full pb-5  z-50  group-hover:opacity-100  group-hover:transition-all group-hover:translate-y-0 duration-1000 ">
 
               <div className="relative flex flex-col gap-3 text-center z-50 ">
 
-                <FaPlay className="text-white text-3xl ml-24 transition-all ease-in duration-1000 mt-36 z-50 " />
+                <FaPlay className="text-white text-3xl ml-[100px] transition-all ease-in duration-1000 mt-36 z-50 " />
                 
-                <p className="lg:text-[12px]  mt-8 text-white line-clamp-2 z-50">{item.content} </p>
+                <p className="lg:text-[12px]  mt-8 text-gray line-clamp-2 z-50">{item.content} </p>
 
               </div>
              
 
           </div>
-          <h1 className="line-clamp-1 text-center  lg:text-sm text-white  z-50  ">{item.title} </h1>
+          </a>
+          <h1  className=" line-clamp-1 text-center  lg:text-sm text-white  z-50  ">{item.title} </h1>
 
 
             </div>
 
 
-          </list>
           
+          
+          </list>
         ))}
 
    
